@@ -55,6 +55,17 @@ export const getTasks = async (userId, queryParams) => {
       total,
       totalPages: Math.ceil(total / limit),
     },
+    stats: {
+      totalTasks: await Task.countDocuments({ userId }),
+      pendingTasks: await Task.countDocuments({
+        userId,
+        status: "pending",
+      }),
+      completedTasks: await Task.countDocuments({
+        userId,
+        status: "completed",
+      }),
+    },
   };
 };
 

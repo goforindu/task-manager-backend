@@ -173,3 +173,8 @@ src
 ## Notes
 
 This project was developed as part of a MERN Stack Internship Assignment and demonstrates authentication, task management, search, filtering, pagination, and REST API development using Node.js, Express.js, and MongoDB.
+
+## Related Repository
+
+Frontend Repository:
+https://github.com/goforindu/task-manager-frontend
